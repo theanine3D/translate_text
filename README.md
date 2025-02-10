@@ -25,7 +25,7 @@ Finding this addon useful? Please consider starring it ⭐, or donating 🙂<br>
   - Punjabi
   - Hindi
 - Reverse translate - instantly reverse the selected languages
-- Fast Language Toggle - allows instantly switching Blender's whole UI between two different languages, using a single button press or custom hotkey. Supports all Blender localizations marked as 'complete' as of Blender 3.5
+- Fast Language Toggle - allows instantly switching Blender's whole UI between two different languages, using a single button press or custom hotkey. Supports all Blender localizations marked as 'complete' as of Blender 3.5. This feature can be found under the "View" menu of Blender's text editor.
 
 ## Installation
 1. Click the green "Code" button above and press "Download ZIP"
