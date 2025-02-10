@@ -14,7 +14,7 @@ bl_info = {
     "name": "Translate Text",
     "description": "Translate text in Blender's text editor, using a variety of different online translation services",
     "author": "Theanine3D",
-    "version": (1, 2),
+    "version": (1, 2, 1),
     "blender": (3, 0, 0),
     "category": "Text",
     "location": "Text Editor Sidebar (Ctrl + T)",
@@ -373,7 +373,10 @@ ops = (
 
 
 def text_editor_menu_item(self, context):
-    self.layout.operator("text.translate_text", text="Translate")
+    self.layout.operator(TranslateText.bl_idname, text="Translate")
+
+def text_editor_view_menu_item(self, context):
+    self.layout.operator(ToggleLangFast.bl_idname)
  
 def menu_func(self, context):
     for op in ops:
@@ -431,12 +434,14 @@ def register():
     bpy.types.Scene.TranslateTextProp = PointerProperty(
         type=TranslateTextProp)
     bpy.types.TEXT_MT_editor_menus.append(text_editor_menu_item)
+    bpy.types.TEXT_MT_view.append(text_editor_view_menu_item)
 
 def unregister():
     for cls in classes:
         unregister_class(cls)
     del bpy.types.Scene.TranslateTextProp
     bpy.types.TEXT_MT_editor_menus.remove(text_editor_menu_item)
+    bpy.types.TEXT_MT_view.remove(text_editor_view_menu_item)
 
 
 if __name__ == "__main__":
