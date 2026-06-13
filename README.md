@@ -1,5 +1,5 @@
 # Translate Text
-Blender (3.x/4.x) addon that adds translation features to Blender's text editor. Tutorial makers and 3D educators that teach multilanguage classes may find this addon useful for showing step-by-step instructions in multiple languages.
+Blender (3.x/4.x/5.x) addon that adds translation features to Blender's text editor. Tutorial makers and 3D educators that teach multilanguage classes may find this addon useful for showing step-by-step instructions in multiple languages.
 
 Finding this addon useful? Please consider starring it ⭐, or [donating](https://ko-fi.com/theanine3d) 🙂<br>
 
